@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# OJT-FINAL-PROJECT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
+## Commit convention
 
 ```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+<type>(<scope>): <message>
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Adding a new feature**:
 
 ```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+git commit -m "feat[OJT-XX]: add user authentication module"
+```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+- Fixing a bug
+
+```js
+git commit -m "fix[OJT-XX]: resolve issue with login form validation"
+```
+
+- **Improving a feature**
+
+```js
+git commit -m "perf[OJT-XX]: optimize image loading in gallery"
+```
+
+- Documentation changes
+
+```js
+git commit -m "docs[OJT-XX]: update README with setup instructions"
+```
+
+- Refactoring code
+
+```js
+git commit -m "refactor[OJT-XX]: simplify login logic"
+```
+
+- Chore (updating build scripts, etc.)
+
+```js
+git commit -m "chore[OJT-XX]: update build pipeline configuration"
+```
+
+- Reverting changes
+
+```js
+git commit -m "revert[OJT-XX]: undo changes in login feature"
+```
+
+- Breaking change
+
+```js
+git commit -m "BREAKING CHANGE[OJT-XX]: update API endpoint for user data"
 ```
