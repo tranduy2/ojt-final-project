@@ -1,5 +1,19 @@
 # OJT-FINAL-PROJECT
 
+## Source base structure
+
+- **`assets/`**: Store static assets like images, fonts, or videos here.
+- **`components/`**: Place reusable UI components such as buttons, inputs, or form elements.
+- **`hooks/`**: Store custom React hooks here that can be shared across different components.
+- **`pages/`**: Components that represent whole pages or views in your application (e.g., Home, Login).
+- **`services/`**: Contains API service logic, business logic, or third-party services (e.g., authentication).
+- **`store/`**: If you’re using state management like Redux, MobX, or Zustand, this folder would contain those files.
+- **`styles/`**: Global styles, CSS, or Tailwind configuration files.
+- **`types/`**: TypeScript types and interfaces.
+- **`utils/`**: Helper functions, utility files, or anything that provides common functionality throughout the application.
+- **`App.tsx`**: The root component of your application.
+- **`index.tsx`**: This is where the React app is rendered into the DOM.
+
 ## Commit convention
 
 ```js
