@@ -1,10 +1,12 @@
-import { createBrowserRouter, Outlet } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
+import SignIn from './pages/sign-in';
+import NotFound from './pages/not-found';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Outlet />,
-    // errorElement: <NotFound />,
+    element: <SignIn />,
+    errorElement: <NotFound />,
     // children: [...publicRoutes, ...privateRoutes],
   },
 ]);
