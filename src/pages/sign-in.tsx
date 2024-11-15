@@ -39,12 +39,12 @@ const SignIn = () => {
           preview={false}
         />
         <div className="hidden md:block absolute top-6 left-8 text-3xl font-medium">
-          {t('common.login.signInToPayment')}
+          {t('login.signInToPayment')}
         </div>
         <div className="hidden md:block absolute top-[90px] left-8 text-sm font-light text-[#4F555A] max-w-[300px]">
-          {t('common.login.noAccount')}{' '}
+          {t('login.noAccount')}{' '}
           <Link to="/register" className="text-[#56B280] font-semibold underline">
-            {t('common.login.registerHere')}
+            {t('login.registerHere')}
           </Link>
         </div>
       </div>
@@ -71,17 +71,17 @@ const SignIn = () => {
 
         <div className="flex flex-col gap-3 flex-grow justify-center">
           <div className="md:hidden text-center mb-4 text-3xl font-medium">
-            {t('common.text.signInToPayment')}
+            {t('common.input.signInToPayment')}
           </div>
           <div className="md:hidden text-center mb-4 text-sm font-light text-[#4F555A]">
-            {t('common.text.noAccount')}
+            {t('common.input.noAccount')}
             <Link to="/register" className=" text-[#56B280] font-semibold underline">
-              {t('common.text.registerHere')}
+              {t('common.input.registerHere')}
             </Link>
           </div>
-          <Input placeholder={t('common.text.enterEmail')} allowClear />
+          <Input placeholder={t('common.input.enterEmail')} allowClear />
           <Input.Password
-            placeholder={t('common.text.enterPassword')}
+            placeholder={t('common.input.enterPassword')}
             iconRender={(visible) => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
           />
 
@@ -89,7 +89,7 @@ const SignIn = () => {
             to="/forgotpassword"
             className="text-xs font-extralight text-[#C7C7C7] text-right hover:text-[#a8a8a8] cursor-pointer"
           >
-            {t('common.login.recoverPassword')}
+            {t('login.recoverPassword')}
           </Link>
           <Button className="py-4 bg-[#56B280] font-semibold" type="primary">
             {t('common.button.signIn')}

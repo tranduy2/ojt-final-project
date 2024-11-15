@@ -39,12 +39,12 @@ const Register = () => {
           preview={false}
         />
         <div className="hidden md:block absolute top-6 left-8 text-3xl font-medium">
-          {t('common.register.signUpToPayment')}
+          {t('register.signUpToPayment')}
         </div>
         <div className="hidden md:block absolute top-[90px] left-8 text-sm font-light text-[#4F555A] max-w-[300px]">
-          {t('common.register.account')}
+          {t('register.account')}
           <Link to="/sign-in" className="text-[#56B280] font-semibold underline">
-            {t('common.register.signInHere')}
+            {t('register.signInHere')}
           </Link>
         </div>
       </div>
@@ -71,20 +71,20 @@ const Register = () => {
 
         <div className="flex flex-col gap-3 flex-grow justify-center ">
           <div className="md:hidden text-center mb-4 text-3xl font-medium">
-            {t('common.text.signUpToPayment')}{' '}
+            {t('common.input.signUpToPayment')}{' '}
           </div>
           <div className="md:hidden text-center mb-4 text-sm font-light text-[#4F555A]">
-            {t('common.text.account')}{' '}
+            {t('common.input.account')}{' '}
             <Link to="/sign-in" className=" text-[#56B280] font-semibold underline">
-              {t('common.text.signInHere')}
+              {t('common.input.signInHere')}
             </Link>
           </div>
 
-          <Input placeholder={t('common.text.enterName')} allowClear />
-          <Input placeholder={t('common.text.enterPhone')} allowClear />
-          <Input placeholder={t('common.text.enterEmail')} allowClear />
+          <Input placeholder={t('common.input.enterName')} allowClear />
+          <Input placeholder={t('common.input.enterPhone')} allowClear />
+          <Input placeholder={t('common.input.enterEmail')} allowClear />
           <Input.Password
-            placeholder={t('common.text.enterPassword')}
+            placeholder={t('common.input.enterPassword')}
             iconRender={(visible) => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
           />
 
