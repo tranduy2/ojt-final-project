@@ -1,6 +1,6 @@
 import { Button, Divider, Dropdown, Image, Input, MenuProps, Space } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
-import { AuthenticationTypes, thirdMethod } from '../constants/login';
+import { authenticationType, thirdMethod } from '../constants/login';
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 import MockupIC from '../assets/images/mockupIp.png';
 import { useTranslation } from 'react-i18next';
@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom';
 const Register = () => {
   const { t, i18n } = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState('en');
-  const authenticationType = AuthenticationTypes();
 
   const items: MenuProps['items'] = [
     {
@@ -40,12 +39,12 @@ const Register = () => {
           preview={false}
         />
         <div className="hidden md:block absolute top-6 left-8 text-3xl font-medium">
-          {t('common.text.signUpToPayment')}
+          {t('common.register.signUpToPayment')}
         </div>
         <div className="hidden md:block absolute top-[90px] left-8 text-sm font-light text-[#4F555A] max-w-[300px]">
-          {t('common.text.account')}
+          {t('common.register.account')}
           <Link to="/sign-in" className="text-[#56B280] font-semibold underline">
-            {t('common.text.signInHere')}
+            {t('common.register.signInHere')}
           </Link>
         </div>
       </div>
@@ -62,7 +61,7 @@ const Register = () => {
               key={item.value}
               className="flex items-center justify-center text-sm text-[#56B280] font-semibold px-3 py-1 bg-white shadow-lg rounded-2xl"
             >
-              <Link to={item.path}>{item.text}</Link>
+              {item.text}
             </Button>
           ))}
           <Button className="bg-[#56B280]  px-4 py-2" type="primary">
