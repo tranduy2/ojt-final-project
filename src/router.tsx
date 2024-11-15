@@ -1,11 +1,11 @@
 import { createBrowserRouter } from 'react-router-dom';
-import SignIn from './pages/sign-in';
 import NotFound from './pages/not-found';
+import HomePage from './pages/home-page';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <SignIn />,
+    element: <HomePage />,
     errorElement: <NotFound />,
     // children: [...publicRoutes, ...privateRoutes],
   },
