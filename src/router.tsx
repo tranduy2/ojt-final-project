@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import SignIn from './pages/sign-in';
 import NotFound from './pages/not-found';
+import Payment from './pages/Payment';
 
 const router = createBrowserRouter([
   {
@@ -8,6 +9,10 @@ const router = createBrowserRouter([
     element: <SignIn />,
     errorElement: <NotFound />,
     // children: [...publicRoutes, ...privateRoutes],
+  },
+  {
+    path: '/Payment',
+    element: <Payment />,
   },
 ]);
 
