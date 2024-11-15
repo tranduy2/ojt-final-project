@@ -3,7 +3,7 @@ import AppleIC from '../assets/svgs/Apple.svg';
 import FbIC from '../assets/svgs/Fb.svg';
 import { useTranslation } from 'react-i18next';
 
-export const useAuthenticationTypes = () => {
+export const AuthenticationTypes = () => {
   const { t } = useTranslation();
   return [
     {
