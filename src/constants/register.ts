@@ -9,12 +9,12 @@ export const useAuthenticationTypes = () => {
     {
       text: t('common.button.signIn'),
       value: 'sign-in',
-      path: '/#',
+      path: '/sign-in',
     },
     {
       text: t('common.button.register'),
       value: 'register',
-      path: '/register',
+      path: '/#',
     },
   ];
 };

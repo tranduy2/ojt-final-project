@@ -5,7 +5,24 @@
       "cancel": "Cancel",
       "delete": "Delete",
       "save": "Save",
-      "signIn": "Sign In"
+      "signIn": "Sign In",
+      "signUp": "Sign Up",
+      "register": "Register",
+      "home": "Home"
+    },
+
+    "text": {
+      "enterEmail": "Enter Email",
+      "enterPassword": "Enter Password",
+      "enterName": "Enter Name",
+      "enterPhone": "Enter Phone",
+      "signInToPayment": "Sign In To Payment",
+      "noAccount": "If you don't have an account, you can",
+      "registerHere": "Register here!",
+      "signUpToPayment": "Sign Up To Payment",
+      "account": "If you have an account, you can",
+      "signInHere": "Sign In here!",
+      "recoverPassword": "Recover Passwword"
     }
   }
 }
