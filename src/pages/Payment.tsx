@@ -28,7 +28,6 @@ const Payment: React.FC = () => {
             </label>
           </div>
         </div>
-
         <h3 className="text-lg font-semibold mb-4, mt-6 border-t pt-4">Shipping Address</h3>
         <div className="border-t pt-4 mt-2 , mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
           <input type="text" placeholder="Name" className="p-2 border rounded-md" />
