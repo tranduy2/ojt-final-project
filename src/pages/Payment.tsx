@@ -60,7 +60,7 @@ const Payment: React.FC = () => {
         <div className="flex justify-between mt-4">
           <button className="text-green-500 hover:underline">Back to cart</button>
           <button className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">
-            Go to shipping
+            Go To Shipping
           </button>
         </div>
       </div>
